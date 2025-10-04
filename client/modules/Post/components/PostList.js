@@ -8,7 +8,7 @@ function PostList(props) {
   return (
     <div className="listView">
       {
-        props.posts.map(post => (
+        props.posts && props.posts.map(post => (
           <PostListItem
             post={post}
             key={post.cuid}
